@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Foundation Intro</title>
+	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="off-canvas-wrapper">
+        <!-- Your menu or Off-canvas content goes here -->
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+            <!-- Close button -->
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <!-- Menu -->
+            <ul class="vertical menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="fun.html">Fun</a></li>
+            </ul>
+        </div>
+        <!-- Your page content lives here -->
+        <div class="off-canvas-content" data-off-canvas-content>
+            <!-- main content within a `grid-container` -->
+            <div class="grid-container">
+                
+                <div class="grid-x grid-padding-x">
+                    <button onclick="location.href = 'index.html';" type="button" class="cell medium-3 button hide-for-small-only bold">Home</button>
+                    <button onclick="location.href = 'resume.html';" type="button" class="cell medium-3 button hide-for-small-only bold">Resume</button>
+                    <button onclick="location.href = 'projects.html';"type="button" class="cell medium-3 button hide-for-small-only bold">Projects</button>
+                    <button onclick="location.href = 'fun.html';" type="button" class="cell medium-3 button hide-for-small-only bold">Fun</button>
+                </div>
+                
+                <div class="grid-x grid-padding-x">
+                    <button type="button" class="cell large-auto button hide-for-medium" data-toggle="offCanvas">Open Menu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+        <div class="cell large-auto"><h1 id="title1"><center>Projects</center></h1></div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+        <div class="cell large-auto">
+            <center>
+            <h3 class="bold">Terrain Generator using THREE.Terrain</h3>
+                        In this project I used the <a href="https://github.com/IceCreamYou/THREE.Terrain" target="_blank">THREE.Terrain</a> library to create a terrain generation tool for one of my classes.
+                <br><img class="margin2 blackborder" src="images/project1.png" alt="THREE.Terrain terrain generation project">
+            </center>
+        </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+        <div class="cell large-auto">
+            <center>
+            <h3 class="bold">Craps Game Simulator</h3>
+                       In this project I created a craps simulator in Java for one of my classes.
+                <br><img class="margin2 blackborder"src="images/project2.png" alt="Screenshot of craps game simulator">
+            </center>
+        </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+        <div class="cell large-auto">
+            <center>
+            <h3 class="bold">Digital Instrument</h3>
+                       In this project I created a digital musical instrument using the <a href="https://p5js.org/" target="_blank">p5.js library</a> for one of my classes. The instrument will play sounds and move the object accoring to user inputs.
+                <br><img class="margin2 blackborder"src="images/project3.png" alt="Screenshot of digital musical instrument">
+            </center>
+        </div>
+    </div>
+
+    
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor.js"></script>
+    <script src="js/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>

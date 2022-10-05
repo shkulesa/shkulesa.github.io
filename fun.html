@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Foundation Intro</title>
+	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="off-canvas-wrapper">
+        <!-- Your menu or Off-canvas content goes here -->
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+            <!-- Close button -->
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <!-- Menu -->
+            <ul class="vertical menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="fun.html">Fun</a></li>
+            </ul>
+        </div>
+        <!-- Your page content lives here -->
+        <div class="off-canvas-content" data-off-canvas-content>
+            <!-- main content within a `grid-container` -->
+            <div class="grid-container">
+                
+                <div class="grid-x grid-padding-x">
+                    <button onclick="location.href = 'index.html';" type="button" class="cell medium-3 button hide-for-small-only bold">Home</button>
+                    <button onclick="location.href = 'resume.html';" type="button" class="cell medium-3 button hide-for-small-only bold">Resume</button>
+                    <button onclick="location.href = 'projects.html';"type="button" class="cell medium-3 button hide-for-small-only bold">Projects</button>
+                    <button onclick="location.href = 'fun.html';" type="button" class="cell medium-3 button hide-for-small-only bold">Fun</button>
+                </div>
+                
+                <div class="grid-x grid-padding-x">
+                    <button type="button" class="cell large-auto button hide-for-medium" data-toggle="offCanvas">Open Menu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-container">
+                
+        <div class="grid-x grid-padding-x">
+            <div class="cell large-auto">
+                <img class="blackborder" src="images/baseball1.jpg" alt="Me playing baseball">
+            </div>
+        </div>
+
+        <div class="grid-x grid-padding-x">
+            <div class="cell large-auto margin2"><h1>I play on the University of St. Thomas<a href="https://tommiesports.com/sports/baseball" target="_blank"> baseball team</a></h1></div>
+        </div>
+
+        <div class="grid-x grid-padding-x">
+            <div class="cell large-auto">
+                <p>
+                    <h3>Here are some honors I've won:</h3>
+                    <ul>
+                        <li>2021: Gold Glove Award</li>
+                        <li>2022: Week 11 Summit League player of the week</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="grid-x grid-padding-x">
+            <div class="cell small-12 medium-6"><img class="blackborder" src="images/gglove.jpeg" alt="2021 DIII gold glove selections"></div>
+            <div class="cell small-12 medium-6"><img class="blackborder" src="images/baseball3.jpg" alt="2022 Week 11 Summit League player of the week"></div>
+        </div>
+        
+    </div>
+
+    
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor.js"></script>
+    <script src="js/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>
