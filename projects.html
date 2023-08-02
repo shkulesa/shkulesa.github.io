@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sam Kulesa</title>
+	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="off-canvas-wrapper bg-color">
+        <!-- Your menu or Off-canvas content goes here -->
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+            <!-- Menu -->
+            <ul class="vertical menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="aboutme.html">Get to know me</a></li>
+            </ul>
+        </div>
+
+        <!-- Page content -->
+        <div class="off-canvas-content bg-color" data-off-canvas-content>
+            <div class="grid-container">
+                
+                <!-- Nav -->
+                <div id="nav" class="grid-x position-fixed-top show-for-medium">
+                    <button onclick="location.href = 'index.html';" type="button" class="cell auto button "><span>Home</span></button>
+                    <button onclick="location.href = 'projects.html';"type="button" class="cell auto button "><span>Projects</span></button>
+                    <button onclick="location.href = 'resume.html';" type="button" class="cell auto button "><span>Resume</span></button>
+                    <button onclick="location.href = 'aboutme.html';" type="button" class="cell auto button "><span>Get to know me</span></button>
+                </div>
+                
+                <div class="grid-x hide-for-medium">
+                    <div class="cell">
+                        <div id="offcanvas-nav">
+                            <button type="button" class="menu-icon" data-toggle="offCanvas"></button>
+                        </div>
+                    </div>
+                </div>
+            <div class="content">
+                <div class="grid-x">
+                    <div class="cell">
+                        <div class="header">Projects</div>
+                        <div class="projects-space"></div>
+                        <div class="subheader">Bug Tracker / Project Management App</div>
+                        <p>
+                            Bug tracker is a web app I created as a way of learning the MERN (MongoDB, Express.js, React.js, Node.js) stack. It is a full-stack web app with a frontend SPA, and a backend web service.
+                            I created this from January to February 2023 as I learned the previously mentioned stack. The app doubles as a project management app, and features users, projects, tickets, notes, roles, role-based permissions, authentication, 
+                            a user dashboard which displays a user's projects and tickets, light/dark mode and more. The project is hosted on render.com and can be demoed <a href="https://bug-tracker-frontend.onrender.com" target="_blank"><b>here</b></a>. 
+                            (NOTE: Render.com takes a minute to load when first accessing the site)
+                        </p>
+                        <img class="project-img" src="images/Bug_tracker.png" alt="picture of bug tracker app">
+                        <div class="projects-space"></div>
+                        <div class="projects-space"></div>
+                        <div class="subheader">St. Paul Crime Data Tracker</div>
+                        <p>
+                            The St. Paul Crime Data web app is a full-stack project I worked on in a team of 3 as part of my web development course. The app dynamically displays crime incidents thorought St. Paul on an interactive map. Incidents can be filtered by incident/crime type, neighborhood, and date & time.
+                            Users can also add and delete new crimes to and from the database. The app is written in Vue.js and uses Leaflet and the <a href="https://nominatim.org/" target="_blank">Nominatim API</a> for the interactive map and street addresses. It retrieves 
+                            data from a RESTful API created with Node.js Express which oulls data from the <a href="https://information.stpaul.gov/datasets/stpaul::crime-incident-report/about" target="_blank">St. Paul Crime Incident Report database</a>.
+                            Check out the demo <a href="https://www.youtube.com/watch?v=V92aN5nZBtw" target="_blank"><b>here</b></a>.
+                        </p>
+                        <img class="project-img" src="images/stpcrime.png" alt="picture of St. Paul crime data app">
+                        <div class="projects-space"></div>
+                    </div>
+                </div>
+
+
+                <!-- Footer-->
+                <div class="grid-x footer">
+                    <div class="cell medium-4">
+                        <img src="images/LI-In-Bug.png" alt=""> <a href="https://www.linkedin.com/in/sam-kulesa-059764192/" target="_blank">linkedin.com/in/sam-kulesa-059764192</a>
+                    </div>
+                    <div class="cell medium-4">
+                        <img src="images/github-mark.png" alt=""> <a href="https://github.com/shkulesa" target="_blank">github.com/shkulesa</a>
+                    </div>
+                    <div class="cell medium-4">
+                        <img src="images/mail-icon.png" alt=""> <a href="mailto: shkulesa@gmail.com">shkulesa@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor.js"></script>
+    <script src="js/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>

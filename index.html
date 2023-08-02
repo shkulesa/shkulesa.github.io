@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sam Kulesa</title>
+	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- <div class="off-canvas-wrapper"> -->
+        <!-- Your menu or Off-canvas content goes here -->
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+            <!-- Menu -->
+            <ul class="vertical menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="aboutme.html">Get to know me</a></li>
+            </ul>
+        </div>
+
+        <!-- Page content -->
+        <div class="off-canvas-content bg-color" data-off-canvas-content>
+            <div class="grid-container">
+                
+                <!-- Nav -->
+                <div id="nav" class="grid-x position-fixed-top show-for-medium">
+                    <button onclick="location.href = 'index.html';" type="button" class="cell auto button "><span>Home</span></button>
+                    <button onclick="location.href = 'resume.html';" type="button" class="cell auto button "><span>Resume</span></button>
+                    <button onclick="location.href = 'projects.html';"type="button" class="cell auto button "><span>Projects</span></button>
+                    <button onclick="location.href = 'aboutme.html';" type="button" class="cell auto button "><span>Get to know me</span></button>
+                </div>
+                
+                <div class="grid-x hide-for-medium">
+                    <div class="cell">
+                        <div id="offcanvas-nav">
+                            <button type="button" class="menu-icon" data-toggle="offCanvas"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-x content">
+                    <div class="cell small-12 medium-6 headshot-container">
+                        <img id="headshot" class="border" src="images/headshot.jpeg" alt="Sam Kulesa">
+                    </div>  
+                    <div class="cell medium-6">
+                        <div id="bio-space" class="show-for-large"></div>
+                            <div class="header">Hi, I'm Sam Kulesa</div>
+                            <div class="subheader">Software Engineer</div>
+                        <p class="bio">I'm a Computer Science graduate from the University of St. Thomas with experience in web development and Java object-oriented programming.</p>
+                    </div>
+                    
+                </div>
+                
+            <!-- Footer-->
+                <div class="grid-x footer">
+                    <div class="cell medium-4">
+                        <img src="images/LI-In-Bug.png" alt=""> <a href="https://www.linkedin.com/in/sam-kulesa-059764192/" target="_blank">linkedin.com/in/sam-kulesa-059764192</a>
+                    </div>
+                    <div class="cell medium-4">
+                        <img src="images/github-mark.png" alt=""> <a href="https://github.com/shkulesa" target="_blank">github.com/shkulesa</a>
+                    </div>
+                    <div class="cell medium-4">
+                        <img src="images/mail-icon.png" alt=""> <a href="mailto: shkulesa@gmail.com">shkulesa@gmail.com</a>
+                    </div>
+                </div>
+            </div><!-- g ctnr -->
+        </div> <!-- Oc cntnt -->
+
+    <script src="js/vendor.js"></script>
+    <script src="js/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>

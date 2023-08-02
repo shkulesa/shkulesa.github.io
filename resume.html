@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sam Kulesa</title>
+	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+        <!-- Your menu or Off-canvas content goes here -->
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+            <!-- Menu -->
+            <ul class="vertical menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="aboutme.html">Get to know me</a></li>
+            </ul>
+        </div>
+
+        <!-- Page content -->
+        <div class="off-canvas-content bg-color" data-off-canvas-content>
+            <div class="grid-container">
+                
+                <!-- Nav -->
+                <div id="nav" class="grid-x position-fixed-top show-for-medium">
+                    <button onclick="location.href = 'index.html';" type="button" class="cell auto button "><span>Home</span></button>
+                    <button onclick="location.href = 'projects.html';"type="button" class="cell auto button "><span>Projects</span></button>
+                    <button onclick="location.href = 'resume.html';" type="button" class="cell auto button "><span>Resume</span></button>
+                    <button onclick="location.href = 'aboutme.html';" type="button" class="cell auto button "><span>Get to know me</span></button>
+                </div>
+                
+                <div class="grid-x hide-for-medium">
+                    <div class="cell">
+                        <div id="offcanvas-nav">
+                            <button type="button" class="menu-icon" data-toggle="offCanvas"></button>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="grid-x content">
+                <div class="cell large-auto">
+                    <div class="header">Resume</div>
+                </div>
+            </div>
+        
+            <div class="grid-x grid-padding-x">
+                <div class="cell small-4 medium-3 large-2 border-right border-bottom resume-header">EDUCATION</div>
+                <div class="cell small-8 medium-9 large-10 border-bottom resume-body">
+                    <p>
+                        <span class="resume-subheader">B.S. in Computer Science</span>
+                        <br><a target="_blank" href="https://stthomas.edu/"><b>University of St. Thomas</b> <img class="icon" src="images/link-icon.png"></a> (2019-2023)
+                        <ul>
+                            <span class="resume-subheader">Courses</span>
+                            <li>Senior Capstone <span class="smalltext"> CISC 480</span></li>
+                            <li>Computer Graphics <span class="smalltext"> CISC 420</span></li>
+                            <li>Algorithms <span class="smalltext"> CISC 380</span></li>
+                            <li>Web Development <span class="smalltext"> CISC 375</span></li>
+                            <li>Information Security <span class="smalltext"> CISC 350</span></li>
+                            <li>Computer Architecture <span class="smalltext"> CISC 340</span></li>
+                            <li>Operating Systems <span class="smalltext"> CISC 310</span></li>
+                            <li>Creative Coding Practices <span class="smalltext"> CISC 298</span></li>
+                            <li>Data Structures <span class="smalltext"> CISC 231</span></li>
+                            <li>Object Oriented Design Concepts <span class="smalltext"> CISC 230</span></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        
+            <div class="grid-x grid-padding-x">
+                <div class="cell small-4 medium-3 large-2 border-right border-bottom resume-header">PROJECTS</div>
+                <div class="cell small-8 medium-9 large-10 border-bottom resume-body">
+                    <p>
+                        <span class="resume-subheader">Bug Tracker/Project Management Web App</span>
+                        (Jan - Feb 2023)
+                        <ul>
+                            <li>Fullstack bug tracker/project management app</li>
+                            <li>Written in MERN stack (MongoDB, Express, React, Node.js)</li>
+                            <li>Features include: Users, Roles, Role-based permissions, Projects, Tickets, Notes, Dashboard, Light/Dark mode</li>
+                            <li>State management using Redux toolkit</li>
+                            <li><a href="https://bug-tracker-frontend.onrender.com" target="_blank">Deployed on Render.com <img class="icon" src="images/link-icon.png"></a></li>
+                        </ul>
+                    </p>
+                    <p>
+                        <span class="resume-subheader">Zoom Meeting SDK Integration</span>
+                        (Oct - Dec 2022)
+                        <ul>
+                            <li>Worked with a team of 6 to integrate Zoom Meeting SDK with SPOCK (small private online course keeper), leveraging Java, Spring, Hibernate, JSP</li>
+                            <li>Researched/studied Zoom Meeting SDK & API as well as OAuth 2.0 authorization protocol</li>
+                            <li>Worked with teammates to implement and test zoom meeting functionality</li>
+                            <li>Ensured timely completion of sprint objectives, ultimately providing zoom meeting experience within the web app</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid-x grid-padding-x">
+                <div class="cell small-4 medium-3 large-2 border-right border-bottom resume-header">ACTIVITIES & HONORS</div>
+                <div class="cell small-8 medium-9 large-10 border-bottom resume-body">
+                    <p>
+                        GPA: <b>3.78</b> (Magna Cum Laude)
+                        <br>Dean's List: All Semesters
+                        <br><span class="resume-subheader">Baseball Player (2019 - 2023)</span>
+                        <ul>
+                            <li>Played 4 years for UST baseball team</li>
+                            <li>Played on the first and <b>only</b> team to ever transition from NCAA Division III to Division I</li>
+                            <ul>
+                                <li><a href="https://tommiesports.com/news/2023/5/16/tommie-baseball-lands-four-on-csc-academic-all-district-team.aspx" target="_blank"><span><b>2023 Academic All-District Team</b></span> <img  class="icon" src="images/link-icon.png"></a></li>
+                                <li><a href="https://tommiesports.com/news/2022/6/14/baseball-duo-gets-summit-league-academic-honor.aspx" target="_blank"><span><b>2022 Summit League All-Academic Team</b></span> <img  class="icon" src="images/link-icon.png"></a></li>
+                                <li><a href="https://tommiesports.com/news/2021/7/1/baseballs-laubscher-kulesa-get-academic-all-district-honor.aspx" target="_blank"><span><b>2021 Academic All-District Team</b></span> <img  class="icon" src="images/link-icon.png"></a></li>
+                            </ul>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid-x grid-padding-x">
+                <div class="cell small-4 medium-3 large-2 border-right border-bottom resume-header">WORK EXPERIENCE</div>
+                <div class="cell small-8 medium-9 large-10 border-bottom resume-body">
+                    <p>
+                        <span class="resume-subheader">Barcodes, Inc</span>
+                        (Jun - Aug 2021)
+                        <ul>
+                            <li>Performed device configuration</li>
+                            <li>Performed device software updates</li>
+                            <li>Migrated antiquated asset tracking data to new system</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid-x grid-padding-x">
+                <div class="cell small-4 medium-3 large-2 border-right resume-header">SKILLS & DOMAIN KNOWLEDGE</div>
+                <div class="cell small-8 medium-9 large-10 resume-body">
+                    <p>
+                        • Java                        • MongoDB                • Spring
+                        • JavaScript                • Node.js                   • Vue.js
+                        • HTML                       • Git                          • R
+                        • CSS                         • REST API                 • Web Services
+                        • React.js                       • SQL                        • DevOps
+                        • MVC                         • Agile
+                    </p>
+                </div>
+            </div>
+
+            <!-- Footer-->
+            <div class="grid-x footer">
+                <div class="cell medium-4">
+                    <img src="images/LI-In-Bug.png" alt=""> <a href="https://www.linkedin.com/in/sam-kulesa-059764192/" target="_blank">linkedin.com/in/sam-kulesa-059764192</a>
+                </div>
+                <div class="cell medium-4">
+                    <img src="images/github-mark.png" alt=""> <a href="https://github.com/shkulesa" target="_blank">github.com/shkulesa</a>
+                </div>
+                <div class="cell medium-4">
+                    <img src="images/mail-icon.png" alt=""> <a href="mailto: shkulesa@gmail.com">shkulesa@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor.js"></script>
+    <script src="js/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>
